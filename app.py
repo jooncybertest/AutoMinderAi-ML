@@ -4,7 +4,7 @@ import pandas as pd
 from flask_cors import CORS  
 
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173"])  
+CORS(app, resources={r"/*": {"origins": "*"}}) 
 
 model = joblib.load('vehicle_maintenance_predictor.pkl')
 scaler = joblib.load('scaler.pkl')
