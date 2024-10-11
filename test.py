@@ -2,7 +2,6 @@ import pandas as pd
 import joblib
 from datetime import datetime
 
-# Load the scaler and model from their saved files
 scaler = joblib.load('/Users/junsookim/Desktop/self-learning/projects/AutoMaintenanceML/scaler.pkl')
 model = joblib.load('/Users/junsookim/Desktop/self-learning/projects/AutoMaintenanceML/vehicle_maintenance_predictor.pkl')
 
